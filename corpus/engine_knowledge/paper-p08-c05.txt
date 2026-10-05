@@ -1,0 +1,6 @@
+[1] NASA, "Prognostics Center of Excellence Data Repository",
+http://ti.arc.nasa.gov/projects/data_prognostics, last accessed on
+January, 2007.
+[2] H. Madsen, G. Kariniotakis, H. A. Nielsen, T. S. Nielsen, and P.
+Pinson, "A Protocol for Standardizing the Performance
+Evaluation of Short-Term Wind Power Prediction Models,"

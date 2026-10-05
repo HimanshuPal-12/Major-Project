@@ -1,0 +1,9 @@
+aining useful component
+life. The remaining useful life (RUL) estimates are in units
+of time (e.g., hours or cycles). End-of-life can be
+subjectively determined as a function of operational
+Damage Propagation Modeling for Aircraft
+Engine Run-to-Failure Simulation
+Abhinav Saxena, Member IEEE, Kai Goebel,
+Don Simon, Member, IEEE, Neil Eklund, Member IEEE
+D

@@ -1,0 +1,37 @@
+Figure 4. Response surface for Exhaust Gas Temperature (EGT) as a
+function of efficiency and flow losses.
+IV. DAMAGE PROPAGATION MODELING
+Having decided on the system model, the next hurdle is to
+model the propagation of damage. Common models used
+across different application domains include the Arrhenius
+model, the Coffin-Manson mechanical crack growth model,
+and the Eyring model (for more than three stresses or when
+the above models are not satisfactory) [12]. These models
+come in numerous variations that will not be discussed here.
+A. Arrhenius
+The Arrhenius model has been used for a variety of failure
+mechanisms. Traditionally, it has been applied to those that
+depend on chemical reactions, diffusion processes or
+migration processes. While this covers many of the non-
+mechanical (or non-material fatigue) failure modes that
+cause electronic equipment failure, lately, variations of the
+Arrhenius equation have also been employed for mechanical
+and other non-traditional applications. The operative
+equation is:
+kT
+H
+f Aet
+Δ
+= , (1)
+where
+tf is the time to failure,
+T is the temperature at the point when the failure
+process takes place,
+k is Boltzmann's constant,
+A is a scaling factor, and
+ΔH is the activation energy.
+B. Coffin-Mason Mechanical Crack Growth Model
+A model more typically applied to mechanical failure,
+material fatigue or material deformation is the (modified)
+Coffin-Manson model. It has been successfully used to
+model crack growth in solder and other metals due

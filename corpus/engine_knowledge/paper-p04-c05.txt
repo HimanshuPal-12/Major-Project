@@ -1,0 +1,5 @@
+1 - Ae
+B(t)/ th w. Recasting parameter A/thw = e a and
+expressing B(t) = tb, the health equation can be written as
+}exp{1)( batth −= . (4)
+Generally, the system will be observed with some non-

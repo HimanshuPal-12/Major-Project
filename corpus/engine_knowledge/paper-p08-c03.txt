@@ -1,0 +1,118 @@
+ed RULs and the corresponding true RULs for four
+UUTs. A simple asymmetric function (see Figure 10) is used
+to compute scores from RUL predictions for each UUT. As
+shown, each of these six cases produces an equal aggregated
+score of six. Clearly one can further differentiate in the
+output performance based on the suggested correlation
+metric. In some applications a higher correlation score may
+be preferred over lower aggregated scores, as a higher
+correlation may indicate a bias in the algorithm output that
+can be accordingly adjusted.
+-5 -4 -3 -2 -1 0 1 2 3 4 5
+0
+2
+4
+6
+8
+1010
+8
+4
+6
+2
+-3 -2 -1 0 1 2 3 4 5-5 -4
+0
+True RUL
+Late Prediction
+Early prediction
+yg
+Prediction Error
+Score
+
+Figure 10. A simplified asymmetric scoring function chosen for illustration
+1 2 3 4 5 6 7 8 9 10
+0
+2
+4
+6
+8
+1010
+8
+4
+6
+2
+0
+2 3 4 5 6 7 8 9 101
+1 2 3 4 5 6 7 8 9 10
+0
+2
+4
+6
+8
+1010
+8
+4
+6
+2
+0
+2 3 4 5 6 7 8 9 101
+1 2 3 4 5 6 7 8 9 10
+0
+2
+4
+6
+8
+1010
+8
+4
+6
+2
+0
+2 3 4 5 6 7 8 9 101
+1 2 3 4 5 6 7 8 9 10
+0
+2
+4
+6
+8
+1010
+8
+4
+6
+2
+0
+2 3 4 5 6 7 8 9 101
+1 2 3 4 5 6 7 8 9 10
+0
+2
+4
+6
+8
+1010
+8
+4
+6
+2
+0
+2 3 4 5 6 7 8 9 101
+1 2 3 4 5 6 7 8 9 10
+0
+2
+4
+6
+8
+1010
+8
+4
+6
+2
+0
+2 3 4 5 6 7 8 9 101
+Score: +2 +1 +2 +1 = 6 Correlation: 0.87
+Score: +1.5 +1.5 +1.5 +1.5 = 6 Correlation: 1.00
+Score: +1 +2 +1 +2 = 6 Correlation:0 . 8 9
+Score: +2 +1 +2 +1 = 6 Correlation: 0.86
+Score: +2 +1 +2 +1 = 6 Correlation: 0.00
+True RUL
+Late Prediction
+Early prediction
+UUT Index

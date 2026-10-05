@@ -1,0 +1,27 @@
+Figure 9. Score as a function of error.
+Asymmetric scoring functions like this capture the
+preference for early prediction pretty well and can be
+appropriately tuned to quantify the extent of such preference.
+While evaluating the results, it was realized that this
+prognostics metric can be further enhanced in various ways.
+It must be noted that predicting farther into the future is
+more difficult than predicting at a time closer to the end of
+life. Furthermore, it is more important to weigh accuracy of
+RULs higher when one is closer to the end of life. Keeping
+these thoughts in mind it may be desirable to assign higher
+weights for cases with shorter true RULs. Another
+characteristic of such datasets is that the performance of an
+algorithm is evaluated from multiple units under test
+(UUTs), e.g., in fleet applications. Since the metric is a
+combined aggregate of performance for individual UUTs, an
+additional correlation metric should be employed to ensure
+that an algorithm consistently predicts well for all cases as
+against predicting well for some and poorly for the rest. This
+idea is illustrated in Figure 10 and Figure 11 shows a
+simplified asymmetric scoring function used for this
+illustration.
+The various axes shown in Figure 11 show six different
+cases of prognostics algorithm outputs. Each axis shows
+estimated RULs and the corresponding true RULs for four
+UUTs. A simple asymmetric function (see Figure 10) is used
+to compute scores from RUL predictions for each UUT.

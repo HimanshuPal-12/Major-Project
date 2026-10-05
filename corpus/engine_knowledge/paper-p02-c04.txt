@@ -1,0 +1,38 @@
+rature; a limit regulator that prevents the static
+pressure at the High-Pressure Compressor (HPC) exit from
+going too low; and an accelera tion and deceleration limiter
+for the core speed. A comprehensive logic structure
+integrates these control-system components in a manner
+similar to that used in real engine controllers such that
+integrator-windup problems are avoided. Furthermore, all of
+the gains for the fan-speed controller and the four limit
+regulators are scheduled such that the controller and
+regulators perform as intended over the full range of flight
+conditions and power levels. The engine diagram in Figure 1
+shows the main elements of the engine model and the flow
+chart in Figure 2 shows how various subroutines are
+assembled in the simulation.
+
+Figure 1. Simplified diagram of engine simulated in C-MAPSS [11].
+Splitter
+Bypass
+Path
+Inlet
+Ambient
+Fan
+Fuel
+Burner
+Core
+Nozzle
+LPC
+HPC
+HPT
+LPT
+Bypass
+Nozzle
+
+Figure 2. A layout showing various modules and their connections as
+modeled in the simulation [11].
+CMAPSS can be operated either in open-loop (without
+any controller) or in closed loop (with the engine and its
+control system) configurations. For the purpose of this

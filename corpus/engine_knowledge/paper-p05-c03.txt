@@ -1,0 +1,32 @@
+Figure 5. Performance parameters like efficiency and flow may not
+change monotonically to model process noise that also incorporates
+between flight maintenance operations, which may lead to improved
+performance in subsequent flights.
+
+A. Initial Wear
+Initial wear can occur due to manufacturing inefficiencies
+and are commonly observed in real systems. Although it is
+not considered abnormal, it can make a difference in useful
+operational life of a component. Initial wear can also be
+modeled by variations in flow and efficiencies of the various
+modules, although the magnitude of such variations is
+relatively low. Chatterjee and Litt [9] give examples for the
+degree of wear that an engine might experience with
+progressive usage. These numbers were used as reference
+values for the challenge data and are recited in Table 3 for
+reference.
+Table 3. Engine wear as manifested in flow and efficiency changes [9].
+Initial
+Wear (%)
+Wear 3000
+Cycles (%)
+Wear 6000
+Cycles (%)
+Fan_Efficiency - 0.18 - 1.5 - 2.85
+Fan_Flow - 0.26 - 2.04 - 3.65
+LPC_Efficiency - 0.62 - 1.46 - 2.61
+LPC_Flow - 1.01 - 2.08 - 4.00
+HPT_Efficiency - 0.48 - 2.63 - 3.81
+HPT_Flow + 0.08 + 1.76 + 2.57
+LPT_Efficiency - 0.10 - 0.54 - 1.08
+LPT_Flow + 0.08 + 0.26 + 0.42

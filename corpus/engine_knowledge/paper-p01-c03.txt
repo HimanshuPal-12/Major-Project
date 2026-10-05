@@ -1,0 +1,28 @@
+Manuscript received May 18, 2008. This work was supported in part by
+the U.S. National Aeronautics and Space Administration (NASA) under the
+Integrated Vehicle Health Management (IVHM) program.
+Abhinav Saxena, is with Research Institute for Advanced Computer
+Science at NASA Ames Research Center, Moffett Field, CA 94035 USA
+(Phone: 650-604-3208; fax: 650-604-4036; e-mail:
+asaxena@mail.arc.nasa.gov).
+Kai Goebel is with NASA Ames Research Center, Moffett Field, CA
+94035 USA.
+Don Simon is with NASA Glenn Research Center, Cleveland, OH,
+44135 USA.
+Neil Eklund is with GE Global Research, Niskayuna, NY 12309
+I. INTRODUCTION
+ata-driven prognostics faces the perennial challenge of
+the lack of run-to-failure data sets. In most cases real-
+world data contain fault signatures for a growing fault but no
+or little data capture fault evolution until failure. Procuring
+actual system fault progression data is typically time
+consuming and expensive. Fielded systems are, most of the
+time, not properly instrumented for collection of relevant
+data. Those fortunate enough to be able to collect long-term
+data for fleets of systems tend to – understandably – hold the
+data from public release for proprietary or competitive
+reasons. Few public data repositories (e.g., [1]) exist that
+make run-to-failure data available. The lack of common data
+sets, which researchers can use to compare their approaches,
+is impeding progress in the field of prognostics. While
+several forecasting competitions have been

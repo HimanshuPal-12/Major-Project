@@ -1,0 +1,18 @@
+nd, Sea and Air GT2008 Berlin,
+Germany, 2008.
+[17] T. Kobayashi and D. L. Simon, "Evaluation of an Enhanced
+Bank of Kalman Filters for In-Flight Aircraft Engine Sensor
+Fault Diagnostics," NASA/ARL, Technical Manual TM2004-
+213203, 2004.
+[18] B. A. Roth, D. L. Doel, and J. J. Cissel, "Probabilistic Matching
+of Turbofan Engine Performance Models to Test Data," in
+ASME Turbo Expo 2005: Land Sea & Air Reno-Tahoe, Nevada,
+2005.
+[19] W. E. Yancey, "Working Papers for Mixture Model Additive
+Noise for Microdata Masking," Statistical Research Division
+U.S. Bureau of the Census, Washington D.C. May 28 2002.
+[20] A. Saxena, J. Celaya, E. Balaban, K. Goebel, B. Saha, S. Saha,
+and M. Schwabacher, "Metrics for Evaluating Performance of
+Prognostics Techniques," in International Conference on
+Prognostics and Health Management (PHM08) , Denver CO,
+2008.

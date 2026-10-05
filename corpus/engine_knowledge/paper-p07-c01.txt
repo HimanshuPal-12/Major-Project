@@ -1,0 +1,53 @@
+Depending on the direction of the failure evolution trajectory
+(simulated by changing e and f parameters) a threshold may
+or may not be crossed. Therefore, the overall health index is
+determined by the margin that approaches the corresponding
+limit first. For instance, in the following figures, health
+index is determined by increasing EGT (decreasing EGT
+margin) as compared to HPC stall margin for all three
+degradation trajectories. Each degradation trajectory was
+simulated until the health index reached zero.
+Efficiency Loss (%)
+Flow Loss (%)
+gp g
+-0.16 -0.14 -0.12 -0.1 -0.08 -0.06 -0.04 -0.02 0
+-0.16
+-0.14
+-0.12
+-0.1
+-0.08
+-0.06
+-0.04
+-0.02
+0
+15
+20
+25
+30
+35
+Failure
+Region
+
+Figure 7. Fault propagation trajectories on HPC stall margin contour map.
+Efficiency Loss (%)
+Flow Loss (%)
+-0.16 -0.14 -0.12 -0.1 -0.08 -0.06 -0.04 -0.02 0
+-0.16
+-0.14
+-0.12
+-0.1
+-0.08
+-0.06
+-0.04
+-0.02
+0
+2100
+2150
+2200
+2250
+2300
+2350
+2400
+2450
+Failure
+Region

@@ -1,0 +1,30 @@
+sets, which researchers can use to compare their approaches,
+is impeding progress in the field of prognostics. While
+several forecasting competitions have been held in the past
+(e.g., [2-7]), none have been conducted with a PHM-centric
+focus. All this provided the motivation to conduct the first
+PHM data challenge. The task was to estimate remaining life
+of an unspecified system using historical data only,
+irrespective of the underlying physical process.
+For most complex systems like aircraft engines, finding a
+suitable model that allows the injection of health related
+changes certainly is a challenge in itself. In addition, the
+question of how the damage propagation should be modeled
+within a model needed to be addressed. Secondary issues
+revolved around how this propagation would be manifested
+in sensor signatures such that users could build meaningful
+prognostic solutions.
+In this paper we first define the prognostics problem to set
+the context. Then the following sections introduce the
+simulation model chosen, along with a brief review of health
+parameter modeling. This is followed by a description of the
+damage propagation modeling, a description of the
+competition data, and a discussion on performance
+evaluation.
+II. P
+ROGNOSTICS
+To avoid confusion, we define prognostics here
+exclusively as the estimation of remaining useful component
+life. The remaining useful life (RUL) estimates are in units
+of time (e.g., hours or cycles). End-of-life can be
+subjectively determined

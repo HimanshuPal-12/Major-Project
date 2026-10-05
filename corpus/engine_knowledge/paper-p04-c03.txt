@@ -1,0 +1,59 @@
+terial fatigue or material deformation is the (modified)
+Coffin-Manson model. It has been successfully used to
+model crack growth in solder and other metals due to
+repeated temperature cycling as equipment is turned on and
+off. The operative equation is
+() maxTGTAfN f
+βα −− Δ= , (2)
+where
+Nf is the number of cycles to failure,
+A is a scaling factor,
+f is the cycling frequency,
+ΔT is the temperature range during a cycle,
+G(Tmax) is an Arrhenius term evaluated at the maximum
+temperature reached in each cycle,
+α is the cycling frequency exponent, and
+β is the temperature range exponent.
+C. Eyring Model
+The Eyring Model originates in chemical reaction rate
+theory and has a theoretical basis in chemistry and quantum
+mechanics. It describes how time to failure varies with
+stress. The base model includes temperature and can be
+expanded to include other relevant stresses. The temperature
+term by itself is very similar to the Arrhenius empirical
+model, explaining why that model has been so successful in
+establishing the connection between the ΔH parameter and
+the quantum theory concept of "activation energy needed to
+cross an energy barrier and initiate a reaction".
+The model for temperature and additional stress terms
+takes the general form:
+⎟⎟
+⎠
+⎞
+⎜⎜
+⎝
+⎛ ⎟
+⎠
+⎞⎜
+⎝
+⎛ ++⎟
+⎠
+⎞⎜
+⎝
+⎛ ++Δ
+=
+21 S
+T
+EDS
+T
+CB
+kT
+H
+f eATt α , (3)
+where
+tf is the time to failure,
+α, ΔH, A, B, C, D, and E are constants that
+determine acceleration between stress
+combinations,
+S
+1 and S2 are relevant stresses

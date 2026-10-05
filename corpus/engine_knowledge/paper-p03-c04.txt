@@ -1,0 +1,6 @@
+The range of the flow and efficiency loss is the same in all
+figures. Response surfaces for the other modules’ sensors
+and operability margins were also generated using the same
+process and verified.
+Figure 3. Response surface of HPC stall margin as a function of
+efficiency and flow losses simulating degradation in HPC module.

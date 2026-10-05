@@ -1,0 +1,44 @@
+zero initial degradation, d, (allowing the data-generation
+process to start at an arbitrary point in the wear-space) which
+will be modeled as an additive term to yield
+}exp{1)( batdth −−= . (5)
+The health index can be used to model different
+phenomena within a subsystem. Specifically, for aircraft
+engine modules like the compressor and turbine sections, the
+health is described both by efficiency ( e) and flow ( f).
+Trajectories for flow and efficiency vary for different fault
+modes [4] and are modeled as separate health related indices
+as shown below.
+() () {}
+() () {} .exp1
+,.exp1
+)(
+tb
+ff
+tb
+ee
+f
+e
+ttadtf
+ttadte
+−−=
+−−= (6)
+The terms e(t) and f(t) are then aggregated to form the
+overall health index H(t), the engine simulation response to
+the given input values.
+() )(),()( tftegtH = (7)
+where, the function g is the minimum of all operative
+margins considered (here those for fan, HPC, HPT, and
+EGT), i.e.
+() ( ) EGTHPTHPCFan mmmmtfteg ,,,min)(),( = , (8)
+where, the margins m in turn are functions of efficiency
+e(t) and flow f(t). Calculation of the health index is further
+discussed in section V.D
+V. APPLICATION SCENARIO
+The scenario developed for the challenge data tracks a
+number of aircraft engines throughout their usage history. A
+particular engine unit may be employed under different
+flight conditions from one flight to another. Depending on
+various factors the amount and rate of damage accumulation
+will be different for each engine. It is assumed that the
+amount of

@@ -1,0 +1,35 @@
+here
+tf is the time to failure,
+α, ΔH, A, B, C, D, and E are constants that
+determine acceleration between stress
+combinations,
+S
+1 and S2 are relevant stresses (e.g., some function
+of voltage or current),
+T is temperature in degrees Kelvin, and
+k is the Boltzmann’s constant.
+The general Eyring model includes terms that have stress
+and temperature interactions. A disadvantage of the Eyring
+model is that it has a relatively large number of parameters
+that need to be determined.
+D. Damage Propagation Model for the Challenge Problem
+Common to all degradation models is the exponential
+behavior of the fault evolution. This and the observation of
+similar degradation trends in practice [10] motivated our use
+of an exponential term while modeling changes of health
+parameters in C-MAPSS. For the purpose of a physics-
+inspired data-generation approach, we assume a generalized
+equation for wear, w = Ae
+B(t), which ignores micro-level
+processes but retains macro-level degradation
+characteristics. Assuming further an upper wear threshold,
+thw, that denotes an operational limit beyond which the
+component/subsystem cannot be used, the generalized wear
+equation can be rewritten as a time varying health index,
+h(t), by subtracting wear from the upper wear threshold and
+normalizing it with respect to the upper wear threshold as
+h(t) = 1 - Ae
+B(t)/ th w. Recasting parameter A/thw = e a and
+expressing B(t) = tb, the health equation can be written as
+}exp{1)( batth −= . (4)
+Generally, the system

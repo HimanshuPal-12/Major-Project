@@ -1,0 +1,8 @@
+# Dashboard-only dependencies; Python 3.12
+streamlit==1.65.0
+pandas==3.0.6
+numpy==2.5.3
+scikit-learn==1.9.1
+scipy==1.18.1
+altair==6.3.0
+pyarrow==25.0.1

@@ -1,0 +1,39 @@
+{
+  "dataset": "cmapss_FD002",
+  "horizon": 20,
+  "window": 20,
+  "seed": 42,
+  "delays": [
+    0
+  ],
+  "budgets": [
+    5.0
+  ],
+  "min_leads": [
+    5,
+    10
+  ],
+  "methods": [
+    "best_single",
+    "equal",
+    "static",
+    "global_delayed",
+    "regime_delayed",
+    "static_covariance",
+    "proposed",
+    "agent_readings",
+    "agent_trend",
+    "agent_relationship"
+  ],
+  "half_life": 25.0,
+  "shrinkage": 50.0,
+  "regularization": 0.01,
+  "tune": false,
+  "max_folds": null,
+  "feedback_policy": "end_of_life",
+  "stress": "none",
+  "corruption_scale": 0.1,
+  "score_interpretation": "empirical healthy-reference anomaly severity [0,1], not failure probability",
+  "healthy_reference_assumption": "first 30 cycles of each training engine",
+  "threshold_grid": "19 fixed caution points from 0.05 to 0.95; 60 validation-score quantiles from 0.05 to 0.995; plus 1.000001 no-alert sentinel; critical threshold midpoint(caution,1.0)"
+}

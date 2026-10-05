@@ -1,0 +1,27 @@
+thresholds that can be measured. These thresholds depend on
+user specifications to determine safe operational limits.
+Prognostics is currently at the core of systems health
+management. Reliably estimating remaining life holds the
+promise for considerable cost savings (for example by
+avoiding unscheduled maintenance and by increasing
+equipment usage) and operational safety improvements.
+Remaining life estimates provide decision makers with
+information that allows them to change operational
+characteristics (such as load) which in turn may prolong the
+life of the component. It also allows planners to account for
+upcoming maintenance and set in motion a logistics process
+that supports a smooth transition from faulty equipment to
+fully functional. Aircraft engines (both military and
+commercial), medical equipment, power plants, etc. are
+some of the common examples of these types of equipment.
+Therefore, it is not surprising that finding solutions to the
+prognostics problem is a very active research area. The fact
+that most efforts are focusing on data-driven approaches
+seems to reflect the desire to harvest low-hanging fruit as
+compared to model-based approaches, irrespective of the
+difficulties in gaining an access to statistically significant
+amounts of run-to-failure data and common metrics that
+allow a comparison between different approaches.
+Next we will describe how a system model can be used to
+generate run-to-failure data that can then be utilized to
+develop, train, and

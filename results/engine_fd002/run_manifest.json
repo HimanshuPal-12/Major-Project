@@ -1,0 +1,31 @@
+{
+  "study": "CMAPSS FD002 grouped engine monitoring",
+  "source_sha256": {
+    "train_FD002.txt": "dac6c4dbc4e7c1bdeb5747da3d313d05c395bb99801b44a002b26a2ba13d788f"
+  },
+  "methods": {
+    "best_single": "fusion/reliability baseline",
+    "equal": "fusion/reliability baseline",
+    "static": "fusion/reliability baseline",
+    "global_delayed": "fusion/reliability baseline",
+    "regime_delayed": "fusion/reliability baseline",
+    "static_covariance": "fusion/reliability baseline",
+    "proposed": "fusion/reliability baseline",
+    "agent_readings": "single-agent ablation",
+    "agent_trend": "single-agent ablation",
+    "agent_relationship": "single-agent ablation"
+  },
+  "warnings": [
+    "Anomaly severity is not a failure probability.",
+    "First 30 training cycles are assumed to represent healthy operation.",
+    "Simulated asset start times are not observed fleet chronology.",
+    "Five grouped folds do not establish novelty or deployment readiness."
+  ],
+  "thresholds": "validation threshold assets only; held-out metrics are retrospective",
+  "threshold_grid": "19 fixed caution points from 0.05 to 0.95; 60 validation-score quantiles from 0.05 to 0.995; plus 1.000001 no-alert sentinel; critical threshold midpoint(caution,1.0)",
+  "outcome_columns": [
+    "failure_cycle",
+    "outcome"
+  ],
+  "outcome_role": "retrospective analysis and delayed feedback scheduler"
+}

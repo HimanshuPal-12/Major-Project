@@ -1,0 +1,27 @@
+= 0 (this is our failure criterion).
+4. Superimpose measurement noise to the output data.
+The output is a time series (cycles) of observables (Nf,
+Nc, w f, ...) at cruise snapshots that were produced by
+modifying flow and efficiencies of the HPC module from
+initial settings (indicating normal deterioration) to values
+corresponding to failure threshold. Degradation of other
+modules was not included intentionally in the challenge data.
+D. Health Index Calculation
+The safe operation region for an engine is determined via
+operability margins - how far the engine is operating from
+various operational limits like stall and temperature limits.
+These margins can be calculated by computing the distance
+between current engine state and pre-defined limits. Among
+the margins considered, some are directly measurable, such
+as core speed limits and upper EGT thresholds. Others are
+“virtual” margins established through simulation. Each of
+these margins are normalized to the range [0,1], where one
+signifies a perfectly healthy system and zero denotes a
+system whose stall margin has reduced by a specified limit.
+For the challenge data this limit was set at 15% for HPC,
+LPC and fan stall margins and about 2% for the EGT
+margin. The underlying premise is that if one engine with
+certain e and f pairing violates either one of operational
+margins under any possible operational conditions, such as
+hot day take off, maximum climb, or cruise, its health index
+would be zero. Otherwise, whichever

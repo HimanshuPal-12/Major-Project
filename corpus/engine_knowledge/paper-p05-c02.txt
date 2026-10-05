@@ -1,0 +1,32 @@
+e flight to another. Depending on
+various factors the amount and rate of damage accumulation
+will be different for each engine. It is assumed that the
+amount of damage accumulated during a particular flight
+will not be directly quantifiable solely based on flight
+duration and flight conditions, and hence, one must rely on
+information extracted from sensor data collected during each
+flight. This scenario models engine performance degradation
+due to wear and tear based on the usage pattern of the
+engines and not necessarily due to any particular fault mode.
+Therefore, sudden degradation during a flight is rather
+unlikely. This allows us to take one measurement snapshot
+per flight to characterize the engine health during or right
+after that flight. Further, the effects of between-flight
+maintenance have not been explicitly modeled but have been
+incorporated as the process noise. This allows the engine
+performance parameters (flow and efficiency) to improve
+within allowable limits at any point and hence the loss in
+efficiency or flow is not locally monotonic (see Figure 5).
+In order to simulate the scenario explained above we
+needed to address several issues in order to make it more
+realistic. Some of these issues and their resolutions are
+discussed next.
+0 10 20 30 40 50
+-0.55
+-0.5
+-0.45
+-0.4
+-0.35
+Time (Cycles)
+Efficiency Loss (%)
+Change in Efficiency Parameter for one Engine

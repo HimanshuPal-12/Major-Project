@@ -1,0 +1,29 @@
+developing diagnostics or prognostics algorithms.
+In this study, since there was no real data available to
+characterize true noise levels, simplistic normal noise
+distributions were assumed based on information available
+from the literature [13, 16-18]. However, to make the signal
+noise non-trivial, mixture distributions were used and all of
+these noise sources were combined to present similar
+challenges in a realistic manner. Since any degradation is
+modeled by varying (generally decreasing) the efficiency
+and flow parameters for the engine, the initial wear due to
+manufacturing and assembly variations was modeled by
+selecting initial values, e
+0 and f0, for e and f parameters (eq.
+6) from a random distribution, such that the maximum initial
+deterioration is bounded within 1% degradation of the
+healthy condition as cited in [14]. Therefore, each health
+index trajectory starts with a number between 1 and 0.99.
+To model the process noise, first the degradation
+trajectory parameters, a
+k and bk, corresponding to a unit
+under test k were chosen from a normal distribution.
+Together with e0 and f0, these parameters define a
+deterministic trajectory for degradation for a particular
+engine. This trajectory was then masked by a mixture of two
+random distributions with slight ly different variances. It has
+been shown that mixture noise models are more difficult to
+characterize even if they consist of simple individual
+components [19]. This contaminated trajectory was fed to
+the

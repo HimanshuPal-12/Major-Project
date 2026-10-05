@@ -1,0 +1,24 @@
+Abstract— This paper describes how damage propagation
+can be modeled within the modules of aircraft gas turbine
+engines. To that end, response surfaces of all sensors are
+generated via a thermo-dynamical simulation model for the
+engine as a function of variations of flow and efficiency of the
+modules of interest. An exponential rate of change for flow and
+efficiency loss was imposed for each data set, starting at a
+randomly chosen initial deterioration set point. The rate of
+change of the flow and efficiency denotes an otherwise
+unspecified fault with increasingly worsening effect. The rates
+of change of the faults were constrained to an upper threshold
+but were otherwise chosen randomly. Damage propagation was
+allowed to continue until a failure criterion was reached. A
+health index was defined as the minimum of several
+superimposed operational margins at any given time instant
+and the failure criterion is reached when health index reaches
+zero. Output of the model was the time series (cycles) of sensed
+measurements typically available from aircraft gas turbine
+engines. The data generated were used as challenge data for the
+Prognostics and Health Management (PHM) data competition
+at PHM’08.
+
+Index Terms —Damage modeling, Prognostics, C-MAPSS,
+Turbofan engines, Performance Evaluation

@@ -1,0 +1,30 @@
+Technical University of Denmark, IMM, Lyngby, Denmark,
+Deliverable ENK5-CT-2002-00665, 2004.
+[3] "NN5: Forecasting Competition for Artificial Neural Networks
+& Computational Intelligence", http://www.neural-forecasting-
+competition.com/index.htm, last accessed on July 2008, 2008.
+[4] "Time-Series Prediction Competition at 2nd European
+Symposium on Time Series Prediction (ESTSP’08)",
+http://www.estsp.org/index.php?pg=welcome
+, last accessed on
+July 2008, 2008.
+[5] A. Lendasse, E. Oja, O. Simula, and M. Verleysen, "Time Series
+Prediction Competition: The CATS Benchmark,"
+Neurocomputing, vol. 70, pp. 2325-2329, 2007.
+[6] S. Makridakis, A. Andersen, R. Carbone, R. Fildes, M. Hibon,
+R. Lewandowski, J. Newton, E. Parzen, and R. Winkler, "The
+Accuracy of Extrapolation (Time Series) Methods: Results of a
+Forecasting Competition," Journal of Forecasting, vol. 1, pp.
+111-153, 1982.
+[7] S. Makridakis and M. Hibon, "The M3-Competition: Results,
+Conclusions, and Implications," International Journal of
+Forecasting, vol. 16, pp. 451-476, 2000.
+[8] M. Kurosaki, T. Morioka, K. Ebina, M. Maruyama, T. Yasuda,
+and M. Endoh, "Fault Detection and Identification in an IM270
+Gas Turbine Using Measurements for Engine Control," Journal
+of Engineering for Gas Turbines and Power, vol. 126, pp. 726-
+732, 2004.
+[9] S. Chatterjee and J. Litt, "Online Model Parameter Estimation of
+Jet Engine Degradation for Autonomous Propulsion Control,"
+NASA, Technical Manual TM2003-212608, 2003.
+[10] K. Goebel, H. Qiu,

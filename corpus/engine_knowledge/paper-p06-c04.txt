@@ -1,0 +1,63 @@
+onal
+margins under any possible operational conditions, such as
+hot day take off, maximum climb, or cruise, its health index
+would be zero. Otherwise, whichever normalized margin is
+lower would be its current health index. As shown in Figure
+6, these margins change as a function of operational
+conditions (e.g. throttle resolver angle (TRA), altitude,
+ambient temperature, etc.). Therefore, the health index must
+be adjusted according to operational condition as well.
+20 40 60 80 100
+8
+9
+10
+11
+12
+TRA
+Fan Stall Margin
+
+20 40 60 80 100
+20
+25
+30
+35
+40
+TRA
+HPC Stall Margin
+
+20 40 60 80 100
+4
+6
+8
+10
+12
+14
+TRA
+LPC Stall Margin
+
+20 40 60 80 100
+1200
+1400
+1600
+1800
+2000
+2200
+TRA
+EGT
+
+1 2
+34
+Fan Stall MarginLPC Stall Margin
+EGT HPC Stall Margin
+
+Figure 6. Stall margins vary as a function of operational conditions (TRA in
+this example).
+For the challenge data set six different flight conditions
+were simulated that comprised of a range of values for three
+operational conditions: altitude (0-42K ft.), Mach number
+(0-0.84), and TRA (20-100). Furthermore, these margins
+change as system degradation takes place. If system
+degradation is plotted on flow-efficiency axes, various
+margins indicating the deterioration can be depicted as
+shown in Figure 7 and Figure 8. A threshold boundary
+separates the failure region for respective margins.

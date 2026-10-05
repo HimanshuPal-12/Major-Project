@@ -1,0 +1,32 @@
+Figure 8. Fault propagation trajectories on EGT contour map with failure
+threshold.
+VI. COMPETITION DATA
+The objective was to generate train, test, and validation
+data sets for development of data-driven prognostics. To that
+end, a reasonably large number of trajectories were created
+from C-MAPSS that had the following properties:
+1) Simulation of degradation in HPC module under 6
+different combinations of Altitude, TRA, and Mach
+number operational conditions. Sensed margins (fan,
+HPC, LPC and EGT) were used to compute health index
+to determine simulation stopping criteria.
+2)
+Time series of observables including operational
+variables (see Table 1 and Table 2), that change from
+some undefined initial condition to a failure threshold.
+Participants were not given access to the health index
+explicitly and were expected to infer it from the given
+sensed variables.
+3)
+Division of data into training set, test set, and validation
+set. The training set had trajectories that ended at the
+failure threshold while the test and validation sets were
+pruned to stop some time prior to the failure threshold.
+4) The range of RUL variation was expanded for the
+validation set to test robustness of the algorithms trained
+on test data set (a condition that was not announced to
+the participants). The test data set RULs ranged between
+10 and 150 cycles, whereas validation RULs ranged
+between 6 and 190 cycles. However, all other
+characteristics like variation in initial wear, noise levels
+and

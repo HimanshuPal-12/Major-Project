@@ -1,0 +1,54 @@
+prediction is
+preferred over late predictions. Therefore, the scoring
+algorithm for this challenge was asymmetric around the true
+time of failure such that late predictions were more heavily
+penalized than early predictions. In either case, the penalty
+grows exponentially with increasing error. The asymmetric
+preference is controlled by parameters a
+1 and a2 in the
+scoring function given below (eq. 11) and Figure 9 shows
+the score as a function of the error.
+⎪
+⎩
+⎪
+⎨
+⎧
+≥−
+<−
+=
+∑
+=
+⎟⎟
+⎠
+⎞
+⎜⎜
+⎝
+⎛
+=
+⎟⎟
+⎠
+⎞
+⎜⎜
+⎝
+⎛−
+n
+i
+a
+d
+n
+i
+a
+d
+de
+s
+1
+,0for 1
+0for 1
+2
+1
+(11)
+where
+s is the computed score,
+n is the number of UUTs,
+d = RULRUL tt −ˆ (Estimated RUL – True RUL),
+a1 = 10, and a2 = 13.

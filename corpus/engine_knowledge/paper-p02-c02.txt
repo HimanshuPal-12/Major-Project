@@ -1,0 +1,29 @@
+ween different approaches.
+Next we will describe how a system model can be used to
+generate run-to-failure data that can then be utilized to
+develop, train, and test prognostic algorithms.
+III. S
+YSTEM MODEL
+Tracking and predicting the progression of damage in
+aircraft engine turbo machinery has some roots in the work
+of Kurosaki et al. [8]. They estimate the efficiency and the
+flow rate deviation of the compressor and the turbine based
+on operational data, and utilize this information for fault
+detection purposes. Further investigations have been done by
+Chatterjee and Litt on on-line tracking and accommodating
+engine performance degradation effects represented by flow
+capacity and efficiency adjustments [9]. In [10], response
+surfaces for various sensors outputs are generated for a range
+of flow and efficiency values using a simulation model.
+These response surfaces are used to identify flow and
+efficiency health parameters of an actual engine by
+optimally matching the set of sensor readings with simulated
+sensor values, resulting in only one possible solution. The
+process chosen here continues on a similar path and follows
+closely the one described in [10].
+An important requirement for the damage modeling
+process was the availability of a suitable system model that
+allows input variations of health related parameters and
+recording of the resulting output sensor measurements. The
+recently released C-MAPSS (Commercial Modular Aero-
+Propulsion System Simulation) [11] meets

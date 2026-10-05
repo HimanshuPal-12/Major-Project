@@ -1,0 +1,38 @@
+an_PR_mod
+LPC efficiency modifier LPC_eff_mod
+LPC flow modifier LPC_flow_mod
+LPC pressure-ratio modifier LPC_PR_mod
+HPC efficiency modifier HPC_eff_mod
+HPC flow modifier HPC_flow_mod
+HPC pressure-ratio modifier HPC_PR_mod
+HPT efficiency modifier HPT_eff_mod
+HPT flow modifier HPT_flow_mod
+LPT efficiency modifier LPT_eff_mod
+HPT flow modifier LPT_flow_mod
+
+Table 2. C-MAPSS outputs to measure system response. Margins were used
+for health index calculation only and were not available to the participants
+explicitly.
+Symbol Description Units
+Parameters available to participants as sensor data
+T2 Total temperature at fan inlet °R
+T24 Total temperature at LPC outlet °R
+T30 Total temperature at HPC outlet °R
+T50 Total temperature at LPT outlet °R
+P2 Pressure at fan inlet psia
+P15 Total pressure in bypass-duct psia
+P30 Total pressure at HPC outlet psia
+Nf Physical fan speed rpm
+Nc Physical core speed rpm
+epr Engine pressure ratio (P50/P2) --
+Ps30 Static pressure at HPC outlet psia
+phi Ratio of fuel flow to Ps30 pps/psi
+NRf Corrected fan speed rpm
+NRc Corrected core speed rpm
+BPR Bypass Ratio --
+farB Burner fuel-air ratio --
+htBleed Bleed Enthalpy --
+Nf_dmd Demanded fan speed rpm
+PCNfR_dmd Demanded corrected fan speed rpm
+W31 HPT coolant bleed lbm/s
+W32 LPT coolant bleed lbm/s

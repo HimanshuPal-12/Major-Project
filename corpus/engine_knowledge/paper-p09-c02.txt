@@ -1,0 +1,31 @@
+ine Model Parameter Estimation of
+Jet Engine Degradation for Autonomous Propulsion Control,"
+NASA, Technical Manual TM2003-212608, 2003.
+[10] K. Goebel, H. Qiu, N. Eklund, and W. Yan, "Modeling
+Propagation of Gas Path Damage," in IEEE Aerospace
+Conference, Big Sky, MT, 2007.
+[11] D. Frederick, J. DeCastro, and J. Litt, "User’s Guide for the
+Commercial Modular Aero-Propulsion System Simulation (C-
+MAPSS)," NASA/ARL, Technical Manual TM2007-215026,
+2007.
+[12] NIST/SEMATECH, "e-Handbook of Statistical Methods",
+http://www.itl.nist.gov/div898/handbook/
+, last accessed on July
+2008, 2003.
+[13] P.-J. Lu and T.-C. Hsu, "Application of Autoassociative Neural
+Network on Gas-Path Sensor Data Validation," Journal of
+Propulsion and Power, vol. 18, pp. 879-888, 2002.
+[14] R. T. Rausch, K. F. Goebel, N. H. Eklund, and B. J. Brunell,
+"Integrated In-Flight Fault Detection and Accommodation: A
+Model-Based Study," Journal of Engineering for Gas Turbines
+and Power, vol. 129, pp. 962-969, 2007.
+[15] N. Eklund, "Using Synthetic Data to Train an Accurate Real-
+World Fault Detection System," in IMACS Multiconference on
+Computational Engineering in Systems Applications , pp. 483-
+488, 2006.
+[16] S. Borguet and O. Leonard, "A Generalised Likelihood Ratio
+Test for Adaptive Gas Turbine Health Monitoring," in ASME
+Turbo Expo 2008: Power for Land, Sea and Air GT2008 Berlin,
+Germany, 2008.
+[17] T. Kobayashi and D. L. Simon, "Evaluation of an Enhanced
+Bank of Kalman Filters for In-Flight Aircraft Engine

@@ -1,0 +1,29 @@
+10 and 150 cycles, whereas validation RULs ranged
+between 6 and 190 cycles. However, all other
+characteristics like variation in initial wear, noise levels
+and degradation parameters spread remained changed.
+Participants of the challenge were then given details of the
+scoring function. They could submit their test set results in
+vector form through a web site where scores were
+automatically calculated and posted back to the participants,
+allowing them to improve their algorithms. To avoid over-
+fitting to the test data, the validation set was withheld and
+published later, without feedback of the score until after the
+competition had closed.
+VII.
+PERFORMANCE EVALUATION
+Performance evaluation is concerned with employing
+metrics that help assess if the prognosis meets specifications
+for the task at hand. In PHM context, since the key aspect is
+to avoid failures, it is generally desirable to predict early as
+compared to predicting late. However, in specific situations
+where failures may not pose life threatening situations and
+early predictions may instead involve significant economic
+burden, this equation may change and one may not prefer
+conservative predictions. Hence, a performance evaluation
+system should reflect such characteristics to meet specific
+requirements.
+For an engine degradation scen ario an early prediction is
+preferred over late predictions. Therefore, the scoring
+algorithm for this challenge was asymmetric around the true
+time of failure such that late

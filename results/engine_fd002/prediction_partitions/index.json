@@ -1,0 +1,55 @@
+{
+  "format": "parquet",
+  "partitions": [
+    {
+      "method": "agent_readings",
+      "file": "method_00.parquet",
+      "rows": 53759
+    },
+    {
+      "method": "agent_relationship",
+      "file": "method_01.parquet",
+      "rows": 53759
+    },
+    {
+      "method": "agent_trend",
+      "file": "method_02.parquet",
+      "rows": 53759
+    },
+    {
+      "method": "best_single",
+      "file": "method_03.parquet",
+      "rows": 53759
+    },
+    {
+      "method": "equal",
+      "file": "method_04.parquet",
+      "rows": 53759
+    },
+    {
+      "method": "global_delayed",
+      "file": "method_05.parquet",
+      "rows": 53759
+    },
+    {
+      "method": "proposed",
+      "file": "method_06.parquet",
+      "rows": 53759
+    },
+    {
+      "method": "regime_delayed",
+      "file": "method_07.parquet",
+      "rows": 53759
+    },
+    {
+      "method": "static",
+      "file": "method_08.parquet",
+      "rows": 53759
+    },
+    {
+      "method": "static_covariance",
+      "file": "method_09.parquet",
+      "rows": 53759
+    }
+  ]
+}

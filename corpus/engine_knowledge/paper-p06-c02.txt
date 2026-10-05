@@ -1,0 +1,49 @@
+t mixture noise models are more difficult to
+characterize even if they consist of simple individual
+components [19]. This contaminated trajectory was fed to
+the engine model simulation and corresponding sensor
+outputs listed in Table 2 were collected after the system
+response reached a steady state. This way, the input process
+noise gets filtered through system dynamics and overall
+effect is observed in the output. Lastly, a random
+measurement noise component was added to all output
+channels in order to impose sensor noise. This multistage
+noise contamination resulted in complex noise
+characteristics often observed in real data and posed a
+similar challenge in front of competition participants to carry
+out appropriate de-noising operations.
+C. Data Generation
+The process for using the model was as follows:
+1. Choose initial deterioration (f
+0, e0).
+[]
+[]0.99,1
+1 0.99,
+0
+∈
+f
+e ( 9 )
+2. Impose an exponential rate of change for flow and
+efficiency loss for each data set, denoting an
+otherwise unspecified fault with increasingly
+worsening effect as described in equation (4). This
+results in the overall health index, H(t)=g(e(t), f(t)),
+varying as a function of time. The randomly chosen
+direction and evolution of faults is constrained by
+[]
+[] .2,1,1.6 1.4,
+,0.003 0.001,
+%,1,
+=∈
+∈
+≤
+kb
+a
+ef
+k
+ii
+(10)
+3. Stop when health H= 0 (this is our failure criterion).
+4. Superimpose measurement noise to the output data.
+The output is a time series (cycles) of observables (Nf,
+Nc, w f, ...)

@@ -1,0 +1,28 @@
+Figure 11. Scenarios illustrating various cases where error based aggregated
+scores may be same but the correlation score distinguishes further between
+different algorithms.
+These suggestions are just to illustrate the point that there
+may be more modifications possible depending on specific
+applications and requirements and one must adapt
+accordingly. A comprehensive review of prognostics metrics
+is given in [20].
+VIII. CONCLUSION
+This paper has described how damage propagation can be
+modeled in various modules of aircraft gas turbine engines
+for developing and testing prognostics algorithms. A
+publically available aero-propulsion system simulator, C-
+MAPSS, was used in this study. Various assumptions and
+settings have been provided that were used to generate data
+for the PHM competition at the first international conference
+on prognostics and health management. Although, the data
+for the competition consisted of a subset of various possible
+conditions and settings, an insight into other possibilities can
+be easily derived. Later, a brief discussion has been provided
+on the performance evaluation of prognostics algorithms and
+the aspects of the performance metrics that may be desirable
+in a PHM application.
+A
+CKNOWLEDGEMENTS
+The authors would like to thank Dean Frederick for
+providing valuable insight into the operation of C-MAPSS.
+REFERENCES

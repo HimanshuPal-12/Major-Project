@@ -1,0 +1,30 @@
+ters and
+recording of the resulting output sensor measurements. The
+recently released C-MAPSS (Commercial Modular Aero-
+Propulsion System Simulation) [11] meets these
+requirements and was chosen for this work.
+A. C-MAPSS
+C-MAPSS is a tool for simulating a realistic large
+commercial turbofan engine. The software is coded in the
+MATLAB
+® and Simulink ® environment, and includes a
+number of editable input parameters that allow the user to
+enter specific values of his/her own choice regarding
+operational profile, closed-loop controllers, environmental
+conditions, etc. C-MAPSS simulates an engine model of the
+90,000 lb thrust class and the package includes an
+atmospheric model capable of simulating operations at (i)
+altitudes ranging from sea level to 40,000 ft, (ii) Mach
+numbers from 0 to 0.90, and (iii) sea-level temperatures
+from –60 to 103 °F. The package also includes a power-
+management system that allows the engine to be operated
+over a wide range of thrust levels throughout the full range
+of flight conditions.
+In addition, the built-in control system consists of a fan-
+speed controller, and a set of regulators and limiters. The
+latter include three high-limit regulators that prevent the
+engine from exceeding its design limits for core speed,
+engine-pressure ratio, and High-Pressure Turbine (HPT) exit
+temperature; a limit regulator that prevents the static
+pressure at the High-Pressure Compressor (HPC) exit from
+going too low; and an accelera tion and deceleration

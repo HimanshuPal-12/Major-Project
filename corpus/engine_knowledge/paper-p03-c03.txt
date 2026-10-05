@@ -1,0 +1,41 @@
+Parameters for calculating the Health Index
+T48 (EGT) Total temperature at HPT outlet °R
+SmFan Fan stall margin --
+SmLPC LPC stall margin --
+SmHPC HPC stall margin --
+B. Response Surfaces
+To ensure that the output of the model was producing
+correct results, we first generated response surfaces for
+sensed outputs and operability margins from C-MAPSS as a
+function of flow and efficiency for specific modules. These
+were compared with those published by Goebel et al. [10].
+Although it was not expected that the units would match (in
+fact, none were revealed in [10]), it was expected that the
+qualitative response should be similar. For instance, with an
+increase in flow and efficiency, the response surface
+behaved in a similar fashion as obtained from the real
+aircraft engine used in [10]. For each module in the gas path
+(HPC, HPT, and LPT), the efficiencies and flows were
+incrementally changed and C-MAPSS was then run under
+different cruise conditions randomly chosen at each time
+step. Some resulting HPC module response surfaces for the
+high pressure compressor stall margin and the exhaust gas
+temperature (EGT) are shown in Figure 3 and Figure 4,
+respectively.
+-0.16 -0.14 -0.12 -0.1 -0.08 -0.06 -0.04 -0.02 0
+-0.16
+-0.14
+-0.12
+-0.1
+-0.08
+-0.06
+-0.04
+-0.02
+0
+15
+20
+25
+30
+35
+Efficiency Loss (%)
+Flow Loss (%)

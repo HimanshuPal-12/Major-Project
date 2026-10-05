@@ -1,0 +1,16 @@
+B. Noise
+Characterizing noise in a system may be a non-trivial
+undertaking. Of various sources, the main sources of noise
+while assessing the true state of system’s health are
+manufacturing and assembly variations, process noise (due
+to factors not taken in to account while modeling the
+process), and measurement noise to name a few important
+ones. These noise sources introduce their respective
+contributions at different stages of the process and a
+combined effect is observed in the sensor measurements at
+the end. A simple approach to model this combined effect is
+to use approximate models (e.g. random noise models) [13,
+14]. In other cases sophisticat ed noise model identification
+techniques may be employed [15] if real data are available
+for such analyses. In both situations a PHM practitioner is
+faced with characterizing and de-noising tasks before

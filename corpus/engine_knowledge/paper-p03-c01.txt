@@ -1,0 +1,31 @@
+paper, we worked exclusively with the closed-loop
+configuration. C-MAPSS has 14 inputs (Table 1) and can
+produce several outputs. Table 2 lists the outputs that were
+used for the challenge data. The inputs include fuel flow and
+a set of 13 health-parameter inputs that allow the user to
+simulate the effects of faults and deterioration in any of the
+engine’s five rotating components (Fan, LPC, HPC, HPT,
+and LPT). The outputs include various sensor response
+surfaces and operability margins. A total of 21 variables out
+of 58 different outputs available from the model were used
+in this study. C-MAPSS provides a set of Graphical User
+Interfaces (GUIs) to simplify input and output control for a
+variety of possible uses, including open-loop analysis,
+controller-design, and simulation of response of the engine
+and its control system in a variety of situations. However,
+for the purpose of this data generation exercise, we ran the
+model in batch-mode without using the GUIs.
+Table 1. C-MAPSS inputs to simulate various degradation scenarios in any
+of the five rotating components of the simulated engine. For example, to
+simulate HPC degradation HPC flow and efficiency modifiers were used
+(highlighted in gray).
+Name Symbol
+Fuel flow Wf
+Fan efficiency modifier fan_eff_mod
+Fan flow modifier fan_flow_mod
+Fan pressure-ratio modifier fan_PR_mod
+LPC efficiency modifier LPC_eff_mod
+LPC flow modifier LPC_flow_mod
+LPC pressure-ratio modifier LPC_PR_mod
+HPC efficiency modifier HPC_eff_mod
+HPC flow
