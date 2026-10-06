@@ -224,8 +224,8 @@
     },
     {
       "path": "dashboard.py",
-      "bytes": 52657,
-      "sha256": "e8feb3dee70dc717e8244181a4e9f9dc97e04c74b9882dc860abbca8763a1a77"
+      "bytes": 52639,
+      "sha256": "55558731f5b79ead93dabf9ce1157e206892cdc2e0a8c2691e32eba43e7ce939"
     },
     {
       "path": "README.md",
@@ -334,5 +334,5 @@
     }
   ],
   "public_url": "https://major-project-industrial.streamlit.app/",
-  "dashboard_revision": "three-agent baseline contributions; Proposed evidence result"
+  "dashboard_revision": "vertically stacked agent charts with horizontal method statistics"
 }

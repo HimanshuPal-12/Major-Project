@@ -307,8 +307,8 @@ def render_agent_comparison(record: pd.Series, engine: str, cycle: int) -> None:
         saved = read_prediction_slice(str(PREDICTIONS), PREDICTIONS.stat().st_mtime, record.get("fold"), method, record.get("delay"), record.get("budget"))
         histories[label] = saved.loc[(saved["asset_id"].astype(str) == engine) & (saved["cycle"] <= cycle)].sort_values("cycle")
     st.markdown('<div class="section-head"><h2>Three-agent comparison</h2><span class="small-mono">WEIGHTED CONTRIBUTIONS · SELECTED PREFIX</span></div>', unsafe_allow_html=True)
-    panels = st.columns(3)
-    for index, (panel, label) in enumerate(zip(panels, ("Readings", "Trend", "Relationships"))):
+    for index, label in enumerate(("Readings", "Trend", "Relationships")):
+        panel = st.container()
         with panel:
             st.markdown(f"### {label}")
             traces = []
