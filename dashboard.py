@@ -158,6 +158,7 @@ def read_prediction_slice(
         "regime_unfamiliar", "condition_change", "window_length", "missing_fraction",
         "data_quality", "quality_status", "affected_sensors", "pattern", "latency_ms",
         "feedback_count", "weight_0", "weight_1", "weight_2", "agent_0", "agent_1", "agent_2",
+        "expert_0", "expert_1", "expert_2",
         "raw_0", "raw_1", "raw_2", "episode_id", "failure_cycle", "outcome",
         "agent_reading", "agent_trend", "agent_relationship", "reading_score", "trend_score",
         "relationship_score", "severity_0", "severity_1", "severity_2",
@@ -297,6 +298,49 @@ def render_agent_panel(record: pd.Series) -> None:
     st.caption("Agent scores and fusion weights are shown from the saved study output. The relationship agent flags patterns; it does not establish a physical root cause.")
 
 
+def render_agent_comparison(record: pd.Series, engine: str, cycle: int) -> None:
+    import altair as alt
+
+    methods = [("best_single", "Best single"), ("equal", "Equal"), ("static", "Static")]
+    histories = {}
+    for method, label in methods:
+        saved = read_prediction_slice(str(PREDICTIONS), PREDICTIONS.stat().st_mtime, record.get("fold"), method, record.get("delay"), record.get("budget"))
+        histories[label] = saved.loc[(saved["asset_id"].astype(str) == engine) & (saved["cycle"] <= cycle)].sort_values("cycle")
+    st.markdown('<div class="section-head"><h2>Three-agent comparison</h2><span class="small-mono">WEIGHTED CONTRIBUTIONS · SELECTED PREFIX</span></div>', unsafe_allow_html=True)
+    panels = st.columns(3)
+    for index, (panel, label) in enumerate(zip(panels, ("Readings", "Trend", "Relationships"))):
+        with panel:
+            st.markdown(f"### {label}")
+            traces = []
+            for method_label, history in histories.items():
+                if history.empty:
+                    continue
+                values = history[["cycle", f"expert_{index}", f"weight_{index}"]].copy()
+                values["Contribution"] = values[f"expert_{index}"] * values[f"weight_{index}"]
+                values["Method"] = method_label
+                traces.append(values[["cycle", "Contribution", "Method"]])
+            if not traces:
+                st.info("No comparison history for this prefix.")
+                continue
+            chart = alt.Chart(pd.concat(traces, ignore_index=True)).mark_line(strokeWidth=2).encode(
+                x=alt.X("cycle:Q", title="Cycle"),
+                y=alt.Y("Contribution:Q", title="Weighted contribution", scale=alt.Scale(domain=[0, 1])),
+                color=alt.Color("Method:N", scale=alt.Scale(domain=["Best single", "Equal", "Static"], range=["#18a9bb", "#ba7528", "#596c99"]), legend=alt.Legend(orient="bottom")),
+                strokeDash=alt.StrokeDash("Method:N", legend=None),
+                tooltip=["Method:N", "cycle:Q", alt.Tooltip("Contribution:Q", format=".3f")],
+            ).properties(height=230)
+            st.altair_chart(chart, width="stretch")
+            stats = st.columns(3)
+            for stat, (_, method_label) in zip(stats, methods):
+                with stat:
+                    history = histories[method_label]
+                    latest = history.iloc[-1] if not history.empty else pd.Series(dtype=object)
+                    st.markdown(f"**{method_label}**")
+                    st.caption(f"Agent score · {fmt(latest.get(f'expert_{index}'), 3)}")
+                    st.caption(f"Weight · {fmt(latest.get(f'weight_{index}'), 3)}")
+    st.caption("Agent scores shown here are calibrated inputs used by fusion; each plotted contribution is score × weight. Overlapping lines indicate matching contributions.")
+
+
 def explain_with_knowledge(record: pd.Series, sensors: pd.DataFrame) -> None:
     st.markdown('<div class="section-head"><h2>Research context</h2><span class="small-mono">EVIDENCE · NOT MAINTENANCE AUTHORITY</span></div>', unsafe_allow_html=True)
     warning = str(first_value(record, ("warning_level", "severity", "alert_state")) or "").strip().casefold()
@@ -409,16 +453,7 @@ def render_sidebar(run_meta: dict[str, Any], split_rows: list[dict[str, Any]]) -
         key="engine_selector",
     )
     fold = asset_fold[engine]
-    available_methods = run_meta.get("methods") or []
-    if not available_methods:
-        available_methods = [
-            "proposed", "best_single", "equal", "static", "global_delayed",
-            "regime_delayed", "static_covariance", "agent_readings", "agent_trend",
-            "agent_relationship",
-        ]
-    suggested = run_meta.get("primary_method", run_meta.get("default_method", "proposed"))
-    method_index = next((i for i, val in enumerate(available_methods) if val == suggested), 0)
-    method = st.sidebar.selectbox("Fusion / comparison method", available_methods, index=method_index, format_func=lambda value: str(value).replace("_", " ").title())
+    method = "proposed"
     delay_values = run_meta.get("delays", [0]) or [0]
     delay = st.sidebar.selectbox("Feedback delay · cycles", delay_values, index=0)
     budgets = run_meta.get("budgets", [5]) or [5]
@@ -658,7 +693,7 @@ def render_replay(max_cycle: int, min_cycle: int, frame: pd.DataFrame, selected_
                 available = [field for field in ("failure_cycle", "outcome", "episode_id") if field in current.index]
                 st.json({field: safe_text(current.get(field)) for field in available} if available else {"status": "No retrospective labels recorded"})
     with agent_tab:
-        render_agent_panel(current)
+        render_agent_comparison(current, selected_engine, cycle)
         regime, change, unfamiliar = st.columns(3)
         regime.metric("Operating regime", safe_text(current.get("regime_id")))
         change.metric("Condition change", safe_text(current.get("condition_change")))
@@ -668,8 +703,19 @@ def render_replay(max_cycle: int, min_cycle: int, frame: pd.DataFrame, selected_
         else:
             familiarity = "Unfamiliar" if str(unfamiliar_flag).lower() in {"true", "1", "yes"} else "Not flagged"
         unfamiliar.metric("Regime familiarity", familiarity)
-        st.markdown('<div class="callout">The selected method identifies how scores are combined. Agent outputs are recorded model evidence under the saved FD002 experiment settings; they do not diagnose a confirmed component failure.</div>', unsafe_allow_html=True)
+        st.caption("Best single, Equal, and Static compare saved fusion methods. All charts stop at the replay cycle.")
     with evidence_tab:
+        st.markdown("### Proposed combined result")
+        contributions = []
+        for index, label in enumerate(("Readings", "Trend", "Relationships")):
+            score = as_number(current.get(f"expert_{index}"))
+            weight = as_number(current.get(f"weight_{index}"))
+            contributions.append({"Agent": label, "Calibrated score": score, "Proposed weight": weight, "Contribution": score * weight if score is not None and weight is not None else None})
+        complete = all(row["Contribution"] is not None for row in contributions)
+        combined = sum(row["Contribution"] for row in contributions) if complete else None
+        st.metric("Proposed calculated value", fmt(combined, 3))
+        st.dataframe(pd.DataFrame(contributions), hide_index=True, width="stretch")
+        st.caption("Proposed value = sum of calibrated agent score × Proposed weight at this cycle. This anomaly evidence score is not a failure probability.")
         explain_with_knowledge(current, sensor_frame.loc[sensor_frame["cycle"] <= cycle] if not sensor_frame.empty and "cycle" in sensor_frame else pd.DataFrame())
 
 

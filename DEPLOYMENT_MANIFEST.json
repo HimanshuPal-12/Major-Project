@@ -224,8 +224,8 @@
     },
     {
       "path": "dashboard.py",
-      "bytes": 49577,
-      "sha256": "5f812a3e3710897b1be4f5be1a9e6fe1402d1b82cc34c6a3f93523dc4af6f74e"
+      "bytes": 52657,
+      "sha256": "e8feb3dee70dc717e8244181a4e9f9dc97e04c74b9882dc860abbca8763a1a77"
     },
     {
       "path": "README.md",
@@ -332,5 +332,7 @@
       "bytes": 25348,
       "sha256": "5596953da7a4d072bee2cca2edb2c0b84755efcfe68951ab440c59060a86ae18"
     }
-  ]
+  ],
+  "public_url": "https://major-project-industrial.streamlit.app/",
+  "dashboard_revision": "three-agent baseline contributions; Proposed evidence result"
 }
